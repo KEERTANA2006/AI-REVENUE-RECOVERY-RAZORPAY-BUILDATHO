@@ -1,0 +1,1030 @@
+{
+  "demo_metadata": {
+    "system": "RecoverFlow AI",
+    "mode": "Razorpay Test Mode / Sandboxed Simulation",
+    "random_seed": 42,
+    "reproducible": true,
+    "note": "All recovered revenue amounts are computed strictly from database records where payment status == 'recovered'."
+  },
+  "judge_summary": {
+    "headline": "Actual simulated revenue recovered: INR 14,823.98",
+    "total_transactions": 100,
+    "revenue_at_risk": 358231.43,
+    "recoverable_revenue": 260270.65,
+    "recovery_attempts": 13,
+    "successful_recoveries": 8,
+    "actual_revenue_recovered": 14823.98,
+    "recovery_rate": "8.0%",
+    "policy_blocks": 34,
+    "human_escalations": 2,
+    "stopped_workflows": 93
+  },
+  "db_verification": {
+    "db_recovered_rows_count": 8,
+    "db_sum_recovered_amount": 14823.98,
+    "api_metrics_recovered_amount": 14823.98,
+    "exact_match": true
+  },
+  "transaction_results": [
+    {
+      "transaction_id": "RR-000001",
+      "amount_at_risk": 821.77,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000002",
+      "amount_at_risk": 1723.86,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000003",
+      "amount_at_risk": 1041.0,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000004",
+      "amount_at_risk": 189.99,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000005",
+      "amount_at_risk": 6088.97,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000006",
+      "amount_at_risk": 3387.68,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000007",
+      "amount_at_risk": 3592.3,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000008",
+      "amount_at_risk": 280.32,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000009",
+      "amount_at_risk": 8992.91,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000010",
+      "amount_at_risk": 133.92,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 0.0,
+      "recovery_status": "recovering",
+      "stopping_reason": "Action executed, awaiting settlement"
+    },
+    {
+      "transaction_id": "RR-000011",
+      "amount_at_risk": 2644.63,
+      "recommended_action": "PAYMENT_LINK",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "payment_link_created",
+      "recovered_amount": 2644.63,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000012",
+      "amount_at_risk": 29309.98,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000013",
+      "amount_at_risk": 248.19,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000014",
+      "amount_at_risk": 468.98,
+      "recommended_action": "SMS_REMINDER",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "sms_sent",
+      "recovered_amount": 468.98,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000015",
+      "amount_at_risk": 1273.44,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000016",
+      "amount_at_risk": 515.32,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000017",
+      "amount_at_risk": 107.13,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000018",
+      "amount_at_risk": 1215.42,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000019",
+      "amount_at_risk": 222.86,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000020",
+      "amount_at_risk": 2231.41,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000021",
+      "amount_at_risk": 276.13,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000022",
+      "amount_at_risk": 11213.81,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000023",
+      "amount_at_risk": 338.7,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000024",
+      "amount_at_risk": 676.48,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000025",
+      "amount_at_risk": 3715.53,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000026",
+      "amount_at_risk": 173.07,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000027",
+      "amount_at_risk": 1542.55,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000028",
+      "amount_at_risk": 7790.92,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000029",
+      "amount_at_risk": 98.37,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000030",
+      "amount_at_risk": 1446.57,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000031",
+      "amount_at_risk": 1619.42,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000032",
+      "amount_at_risk": 3543.02,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000033",
+      "amount_at_risk": 171.5,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000034",
+      "amount_at_risk": 151.31,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000035",
+      "amount_at_risk": 2399.25,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000036",
+      "amount_at_risk": 1712.1,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000037",
+      "amount_at_risk": 1596.77,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000038",
+      "amount_at_risk": 1843.96,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000039",
+      "amount_at_risk": 395.43,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000040",
+      "amount_at_risk": 1553.68,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 1553.68,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000041",
+      "amount_at_risk": 1702.08,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000042",
+      "amount_at_risk": 375.58,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000043",
+      "amount_at_risk": 18009.63,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000044",
+      "amount_at_risk": 2232.21,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000045",
+      "amount_at_risk": 183.65,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 183.65,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000046",
+      "amount_at_risk": 2936.08,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 2936.08,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000047",
+      "amount_at_risk": 254.16,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000048",
+      "amount_at_risk": 3571.09,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000049",
+      "amount_at_risk": 6234.75,
+      "recommended_action": "HUMAN_REVIEW",
+      "policy_decision": "ESCALATED",
+      "execution_outcome": "flagged_for_review",
+      "recovered_amount": 0.0,
+      "recovery_status": "escalated",
+      "stopping_reason": "Stopping Rule #5: Risk score > 7.5 threshold -> HUMAN REVIEW"
+    },
+    {
+      "transaction_id": "RR-000050",
+      "amount_at_risk": 320.21,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000051",
+      "amount_at_risk": 4652.05,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000052",
+      "amount_at_risk": 2036.87,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000053",
+      "amount_at_risk": 3763.45,
+      "recommended_action": "HUMAN_REVIEW",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "flagged_for_review",
+      "recovered_amount": 0.0,
+      "recovery_status": "recovering",
+      "stopping_reason": "Action executed, awaiting settlement"
+    },
+    {
+      "transaction_id": "RR-000054",
+      "amount_at_risk": 18867.37,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000055",
+      "amount_at_risk": 758.94,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000056",
+      "amount_at_risk": 354.03,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000057",
+      "amount_at_risk": 288.8,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000058",
+      "amount_at_risk": 322.56,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000059",
+      "amount_at_risk": 976.86,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000060",
+      "amount_at_risk": 1829.37,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000061",
+      "amount_at_risk": 1660.77,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000062",
+      "amount_at_risk": 3792.48,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 3792.48,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000063",
+      "amount_at_risk": 1118.23,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000064",
+      "amount_at_risk": 9704.07,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000065",
+      "amount_at_risk": 737.31,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000066",
+      "amount_at_risk": 50000.0,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000067",
+      "amount_at_risk": 2803.16,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000068",
+      "amount_at_risk": 303.16,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000069",
+      "amount_at_risk": 220.01,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000070",
+      "amount_at_risk": 2261.33,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 2261.33,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000071",
+      "amount_at_risk": 784.31,
+      "recommended_action": "HUMAN_REVIEW",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "flagged_for_review",
+      "recovered_amount": 0.0,
+      "recovery_status": "recovering",
+      "stopping_reason": "Action executed, awaiting settlement"
+    },
+    {
+      "transaction_id": "RR-000072",
+      "amount_at_risk": 3200.3,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000073",
+      "amount_at_risk": 2230.22,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000074",
+      "amount_at_risk": 983.15,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 983.15,
+      "recovery_status": "recovered",
+      "stopping_reason": "Stopping Rule #1: Payment successfully recovered -> STOP WORKFLOW"
+    },
+    {
+      "transaction_id": "RR-000075",
+      "amount_at_risk": 307.91,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000076",
+      "amount_at_risk": 113.04,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000077",
+      "amount_at_risk": 561.28,
+      "recommended_action": "HUMAN_REVIEW",
+      "policy_decision": "ESCALATED",
+      "execution_outcome": "flagged_for_review",
+      "recovered_amount": 0.0,
+      "recovery_status": "escalated",
+      "stopping_reason": "Stopping Rule #5: Risk score > 7.5 threshold -> HUMAN REVIEW"
+    },
+    {
+      "transaction_id": "RR-000078",
+      "amount_at_risk": 3962.37,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000079",
+      "amount_at_risk": 1511.93,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000080",
+      "amount_at_risk": 169.25,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000081",
+      "amount_at_risk": 1421.93,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000082",
+      "amount_at_risk": 1954.67,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000083",
+      "amount_at_risk": 291.26,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000084",
+      "amount_at_risk": 1381.03,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000085",
+      "amount_at_risk": 1196.69,
+      "recommended_action": "HUMAN_REVIEW",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "flagged_for_review",
+      "recovered_amount": 0.0,
+      "recovery_status": "recovering",
+      "stopping_reason": "Action executed, awaiting settlement"
+    },
+    {
+      "transaction_id": "RR-000086",
+      "amount_at_risk": 197.46,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000087",
+      "amount_at_risk": 1875.59,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000088",
+      "amount_at_risk": 2543.2,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000089",
+      "amount_at_risk": 5566.81,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000090",
+      "amount_at_risk": 5327.85,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000091",
+      "amount_at_risk": 138.86,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000092",
+      "amount_at_risk": 268.61,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000093",
+      "amount_at_risk": 2374.53,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000094",
+      "amount_at_risk": 2370.08,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000095",
+      "amount_at_risk": 2374.57,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000096",
+      "amount_at_risk": 50000.0,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000097",
+      "amount_at_risk": 2582.04,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000098",
+      "amount_at_risk": 6023.05,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000099",
+      "amount_at_risk": 4587.1,
+      "recommended_action": "STOP",
+      "policy_decision": "STOPPED",
+      "execution_outcome": "workflow_stopped",
+      "recovered_amount": 0.0,
+      "recovery_status": "stopped",
+      "stopping_reason": "Stopping Rule #2: Max retry attempts reached -> STOP"
+    },
+    {
+      "transaction_id": "RR-000100",
+      "amount_at_risk": 2913.43,
+      "recommended_action": "RETRY",
+      "policy_decision": "ALLOWED",
+      "execution_outcome": "retry_initiated",
+      "recovered_amount": 0.0,
+      "recovery_status": "recovering",
+      "stopping_reason": "Action executed, awaiting settlement"
+    }
+  ]
+}
